@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather forecast</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header> WEATHER APP</header>
+        <div class="body1">
+            <p class="quote">CHECK HERE</p>
+        </div>
+        <div class="container">
+            <form action="" onsubmit="dataa(event)">
+                <div class="city">
+                <input type="text" placeholder="Enter location" name="city" id="city" class = "input" />
+                <button class="btn">GO!</button>
+            </div>
+            </form>
+            <div id="showdata" class="hide">
+                <h5 id="showcity" class="cityname"></h5>
+                <h5 id="weather" class="info"></h5>
+                <h5 id="temp" class="info"></h5>
+                <h5 id="min" class="info"></h5>
+                <h5 id="max" class="info"></h5>
+                <h5 id="wind" class="info"></h5>
+            </div>
+        </div>
+    </div>
+   
+    <script src="server.js"></script>
+</body>
+
+</html>
